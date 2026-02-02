@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment - Stay Healthy</title>
+    <link rel="icon" type="image/png" href="images/doctor_favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Stay Healthy
+                <img src="images/doctor_favicon.png" alt="Logo" class="navbar-logo">
+            </a>
+            <div class="navbar-menu">
+                <ul class="navbar-nav">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="appointments.html" class="nav-link">Appointments</a></li>
+                    <li><a href="index.html" class="nav-link">Health Blog</a></li>
+                    <li><a href="index.html" class="nav-link">Reviews</a></li>
+                </ul>
+                <div class="navbar-buttons">
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                    <a href="login.html" class="btn btn-primary">Log In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Appointments Section -->
+    <section class="appointments-section">
+        <div class="container">
+            <div class="appointments-header">
+                <h1>Book an Appointment</h1>
+                <p class="subtitle">Find and book an appointment with our trusted doctors</p>
+            </div>
+
+            <!-- Doctor Favicon Image -->
+            <div class="search-doctor-header">
+                <img src="images/doctor_favicon.png" alt="Doctor" class="search-doctor-image">
+            </div>
+
+            <!-- Search Doctor Section -->
+            <div class="search-doctor-section">
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <i class="bi bi-search"></i>
+                        <input 
+                            type="text" 
+                            id="specialtySearch" 
+                            class="search-input" 
+                            placeholder="Search by specialty (e.g., Cardiologist, Dentist, Dermatologist)"
+                        >
+                    </div>
+                    <button type="button" class="btn btn-primary search-btn">
+                        <i class="bi bi-search"></i> Search
+                    </button>
+                </div>
+            </div>
+
+            <!-- Doctors Grid -->
+            <div class="doctors-grid" id="doctorsGrid">
+                <!-- Doctor Card 1 -->
+                <div class="doctor-card" data-specialty="cardiology">
+                    <div class="doctor-image">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Sarah Johnson</h3>
+                        <p class="doctor-specialty"><i class="bi bi-stethoscope"></i> Cardiologist</p>
+                        <div class="doctor-experience">
+                            <span class="experience-badge">15+ Years Experience</span>
+                        </div>
+                        <div class="doctor-rating">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <span class="rating-text">4.8 (120 reviews)</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-book">Book Now</button>
+                </div>
+
+                <!-- Doctor Card 2 -->
+                <div class="doctor-card" data-specialty="dentistry">
+                    <div class="doctor-image">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Michael Chen</h3>
+                        <p class="doctor-specialty"><i class="bi bi-tooth"></i> Dentist</p>
+                        <div class="doctor-experience">
+                            <span class="experience-badge">10+ Years Experience</span>
+                        </div>
+                        <div class="doctor-rating">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <span class="rating-text">4.7 (98 reviews)</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-book">Book Now</button>
+                </div>
+
+                <!-- Doctor Card 3 -->
+                <div class="doctor-card" data-specialty="dermatology">
+                    <div class="doctor-image">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Emily Rodriguez</h3>
+                        <p class="doctor-specialty"><i class="bi bi-heart"></i> Dermatologist</p>
+                        <div class="doctor-experience">
+                            <span class="experience-badge">12+ Years Experience</span>
+                        </div>
+                        <div class="doctor-rating">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <span class="rating-text">4.9 (156 reviews)</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-book">Book Now</button>
+                </div>
+
+                <!-- Doctor Card 4 -->
+                <div class="doctor-card" data-specialty="orthopedics">
+                    <div class="doctor-image">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. James Williams</h3>
+                        <p class="doctor-specialty"><i class="bi bi-bandage"></i> Orthopedic Surgeon</p>
+                        <div class="doctor-experience">
+                            <span class="experience-badge">18+ Years Experience</span>
+                        </div>
+                        <div class="doctor-rating">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <span class="rating-text">4.8 (142 reviews)</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-book">Book Now</button>
+                </div>
+
+                <!-- Doctor Card 5 -->
+                <div class="doctor-card" data-specialty="neurology">
+                    <div class="doctor-image">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Lisa Thompson</h3>
+                        <p class="doctor-specialty"><i class="bi bi-brain"></i> Neurologist</p>
+                        <div class="doctor-experience">
+                            <span class="experience-badge">14+ Years Experience</span>
+                        </div>
+                        <div class="doctor-rating">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <span class="rating-text">4.6 (110 reviews)</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-book">Book Now</button>
+                </div>
+
+                <!-- Doctor Card 6 -->
+                <div class="doctor-card" data-specialty="pediatrics">
+                    <div class="doctor-image">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Robert Martinez</h3>
+                        <p class="doctor-specialty"><i class="bi bi-heart"></i> Pediatrician</p>
+                        <div class="doctor-experience">
+                            <span class="experience-badge">11+ Years Experience</span>
+                        </div>
+                        <div class="doctor-rating">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <span class="rating-text">4.7 (135 reviews)</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-book">Book Now</button>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <p>No doctors found matching your search. Please try another specialty.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

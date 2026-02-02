@@ -1,0 +1,41 @@
+{
+  "name": "basic-landing-page",
+  "version": "1.0.0",
+  "description": "A basic landing page website with navigation bar",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "dev": "live-server",
+    "build": "npm run clean && npm run copy",
+    "copy": "echo 'Build complete - files ready in dist'",
+    "clean": "rimraf dist && mkdir dist",
+    "serve": "http-server dist -p 8080",
+    "lint": "echo 'Add eslint/htmlhint for linting'",
+    "test": "echo 'Add test suite here'",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "landing-page",
+    "bootstrap",
+    "responsive",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "http-server": "^14.1.1",
+    "rimraf": "^3.0.2",
+    "prettier": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/landing-page/issues"
+  },
+  "homepage": "https://github.com/yourusername/landing-page#readme"
+}

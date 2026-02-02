@@ -1,0 +1,206 @@
+.profile-section {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Container holding the profile information */
+.profile-container {
+    max-width: 400px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading within the profile container */
+.profile-container h2 {
+    margin-top: 0;
+    color: #667eea;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Container holding additional profile details */
+.profile-details {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+/* Headings within the profile details container */
+.profile-details h1 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-details h2 {
+    margin-top: 0;
+    color: #667eea;
+    font-size: 1.3rem;
+}
+
+/* Paragraphs within the profile details container */
+.profile-details p {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Labels within the profile details container */
+.profile-details label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Buttons within the profile details container */
+.profile-details button {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    background-color: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-details button:hover {
+    background-color: #5568d3;
+}
+
+/* Edit Form */
+.profile-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.profile-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Labels within the profile container */
+.profile-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Text and email input fields within the profile container */
+.profile-form .form-control,
+.profile-form input[type="text"],
+.profile-form input[type="email"],
+.profile-form input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+.profile-form .form-control:focus,
+.profile-form input[type="text"]:focus,
+.profile-form input[type="email"]:focus,
+.profile-form input[type="tel"]:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.profile-form .form-control:disabled,
+.profile-form input:disabled {
+    background-color: #f5f5f5;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Buttons within the profile container */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.button-group button {
+    flex: 1;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #667eea;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #5568d3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.btn-secondary {
+    background-color: #f5f5f5;
+    color: #666;
+    border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+    background-color: #e9ecef;
+    border-color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-section {
+        padding: 2rem 1rem;
+    }
+
+    .profile-container {
+        padding: 15px;
+        margin: 10% auto;
+    }
+
+    .profile-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .profile-details h1 {
+        font-size: 1.3rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+}

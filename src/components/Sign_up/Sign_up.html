@@ -1,0 +1,52 @@
+<!-- Sign Up Form Section -->
+<section class="signup-page-section">
+    <div class="container">
+        <div class="signup-form-wrapper signup-page-wrapper">
+            <a href="index.html" class="back-link"><i class="bi bi-arrow-left"></i> Back to Home</a>
+            <h2>Sign Up</h2>
+            <p class="already-member">Already a member? <a href="login.html" class="login-link">Log In</a></p>
+            
+            <form class="signup-form" id="signupForm">
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role" name="role" class="form-control" required>
+                        <option value="">Select role</option>
+                        <option value="patient">Patient</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" required>
+                </div>
+
+                <div class="form-group password-group">
+                    <label for="password">Password</label>
+                    <div class="password-input-wrapper">
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Enter password" required>
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+                    <button type="reset" class="btn btn-secondary btn-reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
